@@ -1,5 +1,6 @@
 
 $testvariable: lightgray
+$textcolor: rgba(0,0,0,0.6)//#525150
     
 %testextend 
     border: 10px solid black
@@ -7,55 +8,77 @@ $testvariable: lightgray
     background-color: pink
 
 html 
-    background-color: darkgray 
-
-body 
-    margin: 0
+    background-color: whitesmoke 
+    font-family: Arial, Helvetica, sans-serif
+    color: $textcolor
 
 .textSection 
     padding: 5px
 
 .sectionTitle
-    background-color: white
-    box-shadow: 2px 2px 5px black
-    max-width: 170px
-    
+    letter-spacing: 3px
+    text-transform: uppercase
+.linebreak
+    width: 60px
+    height: 5px
+    background-color: navy
+    box-shadow: 1px 0px 2px navy
+    margin-top: -10px
+
 .pageContainer 
     display: flex
     flex-direction: column
     background-color: $testvariable
-    margin: 0 200px 0 200px
+    width: 60%
+    margin: 0 auto
     align-items: center
     box-shadow: 2px 2px 5px black
 
 .headContainer
-    background-color: royalblue
-    align-self: center
-    padding: 5px 152px 5px 152px
-   
+    background-image: url("./images/banner.jpeg")
+    background-repeat: no-repeat
+    background-size: cover
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 200px
+     
+.resumeImage 
+    border-radius: 50%
+    height: 175px
     
+#headerText 
+    padding-left: 50px
+    color: whitesmoke
 .resumeContainer
     display: flex
     flex-direction: row 
     justify-content: space-around
-    
+  
 .firstColumnContainer 
     display: flex
     flex-direction: column
-    background-color: lightblue
-
+    background-color: white
+    padding-left: 10px
+    min-width: 23%
+    max-width: 23%
 
 .secondColumnContainer
-    background-color: dodgerblue
+    background-color: lightgray
+    padding-left: 10px
+    width: 77%
+
+
+.skillsSection
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+    align-items: flex-start
 
 body 
   padding: 2rem
-
-​
-#sports div
-  padding: 1rem
-  background-color: rgba(0,0,0,.15)
-  border: 1px solid rgba(0,0,0,.2)
 
 
 
